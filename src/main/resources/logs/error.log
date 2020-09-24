@@ -1,0 +1,1031 @@
+2020-07-31 14:33:03.014 [WorkerThread-LastJob] ERROR org.quartz.simpl.SimpleThreadPool - Error while executing the Runnable: 
+java.lang.IllegalStateException: JobStore is shutdown - aborting retry
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3833) ~[quartz-2.3.1.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3116) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1786) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) ~[quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 20:44:18.014 [WorkerThread-LastJob] ERROR org.quartz.simpl.SimpleThreadPool - Error while executing the Runnable: 
+java.lang.IllegalStateException: JobStore is shutdown - aborting retry
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3833) ~[quartz-2.3.1.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3116) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1786) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) ~[quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:39.022 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:39.028 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:42.020 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:42.020 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:45.018 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:45.019 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:48.014 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:48.015 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:51.011 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:51.012 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:54.011 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:54.012 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:34:57.110 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:34:57.110 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:00.014 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:00.015 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:03.011 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:03.012 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:06.010 [clusteredScheduler_Worker-10] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:06.010 [clusteredScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:09.011 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:09.011 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:12.011 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:12.011 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:15.013 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:15.013 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:18.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:18.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:21.010 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:21.010 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:24.012 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:24.012 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:27.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:27.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:30.019 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:30.020 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:33.013 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:33.013 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:36.011 [clusteredScheduler_Worker-10] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:36.012 [clusteredScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:39.011 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:39.012 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:42.013 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:42.014 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:45.012 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:45.012 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:48.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:48.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:51.010 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:51.010 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:54.011 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:54.011 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:35:57.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:35:57.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:00.010 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:00.010 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:03.012 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:03.012 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:06.009 [clusteredScheduler_Worker-10] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:06.010 [clusteredScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:09.009 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:09.009 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:12.011 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:12.011 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:15.011 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:15.012 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:18.015 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:18.015 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:21.008 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:21.008 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:24.016 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:24.017 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:27.012 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:27.013 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:30.011 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:30.011 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:33.014 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:33.014 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:36.013 [clusteredScheduler_Worker-10] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:36.013 [clusteredScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:39.012 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:39.012 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:42.013 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:42.013 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:45.014 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:45.015 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:48.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:48.010 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:51.009 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:51.009 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:54.012 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:54.012 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:36:57.011 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:36:57.011 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:37:00.014 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:37:00.014 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:37:03.018 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:37:03.018 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:37:06.013 [clusteredScheduler_Worker-10] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:37:06.013 [clusteredScheduler_Worker-10] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:37:56.810 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:37:56.810 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:38:18.949 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:38:18.949 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:40.120 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:40.121 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:40.124 [Druid-ConnectionPool-Create-712118632] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) [druid-1.1.9.jar:1.1.9]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_231]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_231]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_231]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_231]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:340) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:947) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	... 6 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_231]
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465) ~[?:1.8.0_231]
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379) ~[?:1.8.0_231]
+	at com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:316) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:188) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:99) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:331) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:947) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	... 6 more
+2020-07-31 21:41:40.133 [WorkerThread-LastJob] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:40.133 [WorkerThread-LastJob] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:40.134 [WorkerThread-LastJob] ERROR org.quartz.simpl.SimpleThreadPool - Error while executing the Runnable: 
+java.lang.IllegalStateException: JobStore is shutdown - aborting retry
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3833) ~[quartz-2.3.1.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3116) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1786) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) ~[quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:41.668 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:41.669 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:42.010 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:42.010 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:45.010 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:45.010 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:48.012 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:48.012 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:51.012 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:51.013 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:54.018 [clusteredScheduler_Worker-6] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:54.018 [clusteredScheduler_Worker-6] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:41:57.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:41:57.010 [clusteredScheduler_Worker-7] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:00.014 [clusteredScheduler_Worker-8] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:00.014 [clusteredScheduler_Worker-8] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:03.011 [clusteredScheduler_Worker-9] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:03.011 [clusteredScheduler_Worker-9] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:13.158 [clusteredScheduler_Worker-1] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:13.166 [clusteredScheduler_Worker-1] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:15.019 [clusteredScheduler_Worker-2] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:15.019 [clusteredScheduler_Worker-2] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:18.014 [clusteredScheduler_Worker-3] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:18.014 [clusteredScheduler_Worker-3] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:21.017 [clusteredScheduler_Worker-4] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:21.017 [clusteredScheduler_Worker-4] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 21:42:24.016 [clusteredScheduler_Worker-5] ERROR org.quartz.core.JobRunShell - Job jdbcGroup.job_01 threw an unhandled Exception: 
+java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+2020-07-31 21:42:24.016 [clusteredScheduler_Worker-5] ERROR org.quartz.core.ErrorLogger - Job (jdbcGroup.job_01 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) [quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]
+Caused by: java.lang.ClassCastException: com.example.quartz.domain.SchedulerJob cannot be cast to com.example.quartz.domain.SchedulerJob
+	at com.example.quartz.jdbcTest.MyJob.execute(MyJob.java:22) ~[classes/:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.1.jar:?]
+	... 1 more
+2020-07-31 22:28:14.175 [Druid-ConnectionPool-Create-1629241006] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) [druid-1.1.9.jar:1.1.9]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_231]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_231]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_231]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_231]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:340) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:947) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	... 6 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_231]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_231]
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465) ~[?:1.8.0_231]
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.waitForClose(SSLSocketImpl.java:1761) ~[?:1.8.0_231]
+	at sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:124) ~[?:1.8.0_231]
+	at sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1093) ~[?:1.8.0_231]
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:369) ~[?:1.8.0_231]
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037) ~[?:1.8.0_231]
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395) ~[?:1.8.0_231]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379) ~[?:1.8.0_231]
+	at com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:316) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:188) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:99) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:331) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:163) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:947) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	... 6 more
+2020-07-31 22:49:58.585 [WorkerThread-LastJob] ERROR org.quartz.simpl.SimpleThreadPool - Error while executing the Runnable: 
+java.lang.IllegalStateException: JobStore is shutdown - aborting retry
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3833) ~[quartz-2.3.1.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3116) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1786) ~[quartz-2.3.1.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) ~[quartz-2.3.1.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.1.jar:?]

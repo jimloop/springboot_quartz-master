@@ -1,0 +1,648 @@
+2020-09-23 18:03:20.378 [main] INFO  com.example.quartz.DemoApplication - Starting DemoApplication on DESKTOP-U866ECA with PID 14504 (F:\lxf\worksoftware\springboot_quartz-master\target\classes started by lxf in F:\lxf\worksoftware\springboot_quartz-master)
+2020-09-23 18:03:20.404 [main] INFO  com.example.quartz.DemoApplication - No active profile set, falling back to default profiles: default
+2020-09-23 18:03:22.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8866"]
+2020-09-23 18:03:22.189 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-23 18:03:22.190 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-23 18:03:22.337 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring embedded WebApplicationContext
+2020-09-23 18:03:22.402 [main] INFO  org.quartz.ee.servlet.QuartzInitializerListener - Quartz Initializer Servlet loaded, initializing Scheduler...
+2020-09-23 18:03:22.437 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-23 18:03:22.440 [main] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2020-09-23 18:03:22.453 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-23 18:03:22.453 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-09-23 18:03:22.454 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-09-23 18:03:22.455 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-23 18:03:22.455 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2020-09-23 18:03:22.455 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-09-23 18:03:22.456 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2020-09-23 18:03:22.456 [main] INFO  org.quartz.ee.servlet.QuartzInitializerListener - Scheduler has been started...
+2020-09-23 18:03:22.456 [main] INFO  org.quartz.ee.servlet.QuartzInitializerListener - Storing the Quartz Scheduler Factory in the servlet context at key: org.quartz.impl.StdSchedulerFactory.KEY
+2020-09-23 18:03:23.355 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-23 18:03:23.980 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-09-23 18:03:23.980 [main] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2020-09-23 18:03:23.981 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-23 18:03:23.981 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-09-23 18:03:23.995 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'clusteredScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2020-09-23 18:03:24.015 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'clusteredScheduler' initialized from an externally provided properties instance.
+2020-09-23 18:03:24.015 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-09-23 18:03:24.015 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@59a09be
+2020-09-23 18:03:24.701 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED started.
+2020-09-23 18:03:24.710 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8866"]
+2020-09-23 18:03:24.741 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:24.741 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:24
+2020-09-23 18:03:24.742 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:24.759 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:24.759 [main] INFO  com.example.quartz.DemoApplication - Started DemoApplication in 5.197 seconds (JVM running for 6.587)
+2020-09-23 18:03:24.761 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED started.
+2020-09-23 18:03:24.768 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:38.943 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:38.943 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:38.944 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:38.944 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:38.960 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:38.961 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:38
+2020-09-23 18:03:38.961 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:38.961 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:38.961 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:38.961 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:38.962 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:38.962 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:38.962 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:38.982 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:38.982 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:38
+2020-09-23 18:03:38.982 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:38.982 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:38.983 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:38.983 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:38.983 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:38.983 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:38.983 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:39.009 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:39.009 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:39
+2020-09-23 18:03:39.009 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:39.009 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:39.009 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:39.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:39.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:39.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:39.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:39.027 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:39.027 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:39
+2020-09-23 18:03:39.027 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:39.027 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:39.028 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:39.028 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:39.028 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:39.028 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:39.028 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:39
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:39.043 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:39.044 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:42
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:42.012 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:45
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:45.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:45.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:45.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:48.021 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:48.021 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:48
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:48.118 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:51
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:54
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:03:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:03:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:03:57
+2020-09-23 18:03:57.011 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:03:57.011 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:03:57.012 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:03:57.012 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:03:57.012 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:03:57.012 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:03:57.012 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:00.012 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:00
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:03.012 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:03.012 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:03
+2020-09-23 18:04:03.012 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:03.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:06.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:06
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:06.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:06.012 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:09.012 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:09.012 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:09
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:09.013 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:12
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:15.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:15
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:18.008 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:18
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:21.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:21.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:21
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:21.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:24.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:24.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:24
+2020-09-23 18:04:24.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:27
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:27.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:27.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:27.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:27.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:30
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:30.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:30.012 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:30.012 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:33.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:33.013 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:33
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:33.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:36
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:36.170 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:39
+2020-09-23 18:04:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:42
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:42.013 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:42.014 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:42.014 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:45
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:45.016 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:45.017 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:45.017 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:48
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:48.016 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:48.016 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:51
+2020-09-23 18:04:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:51.012 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:51.013 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:51.013 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:51.013 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:51.013 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:54
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:54.013 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:04:57
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:04:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:04:57.011 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:04:57.011 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:04:57.011 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:00
+2020-09-23 18:05:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:00.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:00.014 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:00.014 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:00.014 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:00.014 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:03
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:03.014 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:06.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:06.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:06
+2020-09-23 18:05:06.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:06.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:06.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:06.014 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:06.014 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:06.014 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:06.014 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:09
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:12
+2020-09-23 18:05:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:12.010 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:12.010 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:12.010 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:12.010 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:12.010 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:15.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:15
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:15.011 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:18.014 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:18
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:18.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:21
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:21.014 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:24.010 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:24
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:24.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:27
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:30
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:30.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:33
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:36.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:36.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:36
+2020-09-23 18:05:36.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:36.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:36.010 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:36.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:36.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:36.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:36.011 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:39.014 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:39
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:39.015 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:42
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:42.011 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:45
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:45.012 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:48.014 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:48
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:48.015 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:51.010 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:51.010 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:51
+2020-09-23 18:05:51.010 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:51.010 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:51.010 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:51.011 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:54.011 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:54
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:54.012 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:05:57.009 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:05:57
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:05:57.010 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:00.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:00.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:00
+2020-09-23 18:06:00.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:00.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:00.010 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:00.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:00.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:00.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:00.011 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:03.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:03.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:03
+2020-09-23 18:06:03.010 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:03.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:03.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:03.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:03.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:03.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:03.012 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:06
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:06.018 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:09.016 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:09
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:09.017 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:12
+2020-09-23 18:06:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:12.008 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:12.009 [clusteredScheduler_Worker-7] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:15
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:15.009 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:15.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:15.010 [clusteredScheduler_Worker-8] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:18
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:18.009 [clusteredScheduler_Worker-9] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:21.016 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:21.016 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:21
+2020-09-23 18:06:21.016 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:21.016 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:21.017 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:21.017 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:21.017 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:21.017 [clusteredScheduler_Worker-10] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:21.017 [clusteredScheduler_Worker-10] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:24
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:24.014 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:24.015 [clusteredScheduler_Worker-1] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:24.015 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:27.013 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:27.013 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:27
+2020-09-23 18:06:27.013 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:27.013 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:27.013 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:27.014 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:30
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:30.013 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:33
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:33.011 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:36.012 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:36.012 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:36
+2020-09-23 18:06:36.012 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:36.012 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:36.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:36.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:36.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:36.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:36.013 [clusteredScheduler_Worker-5] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:39.009 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+2020-09-23 18:06:39.009 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2020-09-23 18:06:39
+2020-09-23 18:06:39.009 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+2020-09-23 18:06:39.009 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------开始启动reflectionTest方法对应的任务
+2020-09-23 18:06:39.009 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - ------------通过类全限定名获取对象---------------
+2020-09-23 18:06:39.010 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第0个元素：class java.lang.String
+2020-09-23 18:06:39.010 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 第1个元素：class java.lang.Integer
+2020-09-23 18:06:39.010 [clusteredScheduler_Worker-6] INFO  com.example.quartz.util.JobUtils - 任务名称 = [job_01]----------启动成功
+2020-09-23 18:06:39.010 [clusteredScheduler_Worker-6] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+2020-09-23 18:06:39.777 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED paused.
+2020-09-23 18:06:39.779 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED shutting down.
+2020-09-23 18:06:39.779 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED paused.
+2020-09-23 18:06:39.780 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-23 18:06:39.782 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-23 18:06:39.988 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2020-09-23 18:06:39.988 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2020-09-23 18:06:39.988 [Thread-4] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-09-23 18:06:39.988 [Thread-4] INFO  org.quartz.ee.servlet.QuartzInitializerListener - Quartz Scheduler successful shutdown.

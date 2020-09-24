@@ -1,0 +1,125 @@
+16:42:43.738 [restartedMain] INFO  com.example.quartz.DemoApplication - Starting DemoApplication on DESKTOP-U866ECA with PID 9600 (F:\lxf\worksoftware\springboot_quartz-master\target\classes started by lxf in F:\lxf\worksoftware\springboot_quartz-master)
+16:42:43.744 [restartedMain] INFO  com.example.quartz.DemoApplication - No active profile set, falling back to default profiles: default
+16:42:45.617 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8866"]
+16:42:45.626 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:42:45.626 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+16:42:45.991 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring embedded WebApplicationContext
+16:42:46.665 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:42:47.139 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+16:42:47.141 [restartedMain] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: restartedMain
+16:42:47.151 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:42:47.151 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+16:42:47.156 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'clusteredScheduler' with instanceId 'DESKTOP-U866ECA1574412167141'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:42:47.156 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'clusteredScheduler' initialized from an externally provided properties instance.
+16:42:47.156 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+16:42:47.156 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4e9004c4
+16:42:47.853 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574412167141 started.
+16:42:47.862 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8866"]
+16:42:47.895 [restartedMain] INFO  com.example.quartz.DemoApplication - Started DemoApplication in 4.659 seconds (JVM running for 5.469)
+16:42:47.937 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+16:42:47.937 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 16:42:47
+16:42:47.938 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+16:42:47.938 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+16:43:00.039 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+16:43:00.040 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 16:43:00
+16:43:00.040 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+16:43:00.040 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+16:44:00.033 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+16:44:00.034 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 16:44:00
+16:44:00.035 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+16:44:00.036 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:07:04.581 [restartedMain] INFO  com.example.quartz.DemoApplication - Starting DemoApplication on DESKTOP-U866ECA with PID 12624 (F:\lxf\worksoftware\springboot_quartz-master\target\classes started by lxf in F:\lxf\worksoftware\springboot_quartz-master)
+17:07:04.586 [restartedMain] INFO  com.example.quartz.DemoApplication - No active profile set, falling back to default profiles: default
+17:07:06.662 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8866"]
+17:07:06.677 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:07:06.678 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+17:07:06.806 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring embedded WebApplicationContext
+17:07:07.300 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:07:07.830 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:07:07.832 [restartedMain] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: restartedMain
+17:07:07.849 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:07:07.849 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+17:07:07.858 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'clusteredScheduler' with instanceId 'DESKTOP-U866ECA1574413627832'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+17:07:07.858 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'clusteredScheduler' initialized from an externally provided properties instance.
+17:07:07.858 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+17:07:07.858 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b959951
+17:07:08.704 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413627832 started.
+17:07:08.716 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8866"]
+17:07:08.752 [restartedMain] INFO  com.example.quartz.DemoApplication - Started DemoApplication in 4.701 seconds (JVM running for 6.049)
+17:07:08.786 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+17:07:08.787 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 17:07:08
+17:07:08.787 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+17:07:08.787 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:07:29.420 [http-nio-8866-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:07:29.583 [http-nio-8866-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+17:07:29.585 [http-nio-8866-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+17:08:00.032 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+17:08:00.033 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 17:08:00
+17:08:00.033 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+17:08:00.034 [clusteredScheduler_Worker-2] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:09:00.044 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+17:09:00.045 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 17:09:00
+17:09:00.045 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+17:09:00.046 [clusteredScheduler_Worker-3] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:10:00.031 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+17:10:00.033 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 17:10:00
+17:10:00.033 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+17:10:00.034 [clusteredScheduler_Worker-4] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:10:12.179 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413627832 paused.
+17:10:12.190 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413627832 shutting down.
+17:10:12.190 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413627832 paused.
+17:10:12.192 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413627832 shutdown complete.
+17:10:12.198 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:10:18.755 [restartedMain] INFO  com.example.quartz.DemoApplication - Starting DemoApplication on DESKTOP-U866ECA with PID 12056 (F:\lxf\worksoftware\springboot_quartz-master\target\classes started by lxf in F:\lxf\worksoftware\springboot_quartz-master)
+17:10:18.761 [restartedMain] INFO  com.example.quartz.DemoApplication - No active profile set, falling back to default profiles: default
+17:10:20.423 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8866"]
+17:10:20.436 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:10:20.436 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+17:10:20.556 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring embedded WebApplicationContext
+17:10:21.062 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:10:21.573 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+17:10:21.575 [restartedMain] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: restartedMain
+17:10:21.604 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:10:21.604 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+17:10:21.610 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'clusteredScheduler' with instanceId 'DESKTOP-U866ECA1574413821575'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+17:10:21.610 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'clusteredScheduler' initialized from an externally provided properties instance.
+17:10:21.610 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+17:10:21.611 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@13b0c3a8
+17:10:22.319 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413821575 started.
+17:10:22.327 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8866"]
+17:10:22.355 [restartedMain] INFO  com.example.quartz.DemoApplication - Started DemoApplication in 4.173 seconds (JVM running for 4.968)
+17:10:44.010 [http-nio-8866-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:10:44.045 [http-nio-8866-exec-1] INFO  com.example.quartz.controller.RedisController - 进入testStringAndHash方法：
+17:10:44.301 [http-nio-8866-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+17:10:44.303 [http-nio-8866-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+17:10:44.810 [http-nio-8866-exec-1] INFO  com.example.quartz.controller.RedisController - 离开testStringAndHash方法
+17:11:00.052 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is start ............
+17:11:00.053 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - Hello quartz 2019-11-22 17:11:00
+17:11:00.054 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - JobDetail 'jdbcGroup.job_01':  jobClass: 'com.example.quartz.jdbcTest.MyJob concurrentExectionDisallowed: false persistJobDataAfterExecution: false isDurable: true requestsRecovers: false
+17:11:00.054 [clusteredScheduler_Worker-1] INFO  com.example.quartz.jdbcTest.MyJob - MyJob is end .................
+17:11:03.768 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413821575 paused.
+17:11:03.771 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413821575 shutting down.
+17:11:03.771 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413821575 paused.
+17:11:03.772 [Thread-11] INFO  org.quartz.core.QuartzScheduler - Scheduler clusteredScheduler_$_DESKTOP-U866ECA1574413821575 shutdown complete.
+17:11:03.775 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
