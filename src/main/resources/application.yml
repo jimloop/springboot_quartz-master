@@ -1,0 +1,67 @@
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: '123456'
+    druid:
+      initialSize: 2
+      minIdle: 2
+      maxActive: 30
+  redis:
+    database: 0
+    pool:
+      min-idle: 5
+      max-active: 10
+      max-idle: 10
+      max-wait: 2000
+    port: 6379
+    host: 127.0.0.1
+    password: 123456
+    timeout: 1000
+  quartz:
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: clusteredScheduler
+            instanceId: AUTO
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            tablePrefix: QRTZ_
+            isClustered: false  #是否使用集群。一台服务器就不需要
+            clusterCheckinInterval: 10000
+            useProperties: false
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10
+            threadPriority: 5
+            threadsInheritContextClassLoaderOfInitializingThread: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mapper/*.xml
+  table:
+    auto: update
+  model:
+    pack: com.example.quartz.domain
+  database:
+    type: mysql
+  #当mybatis.table.auto=create时，系统启动后，会将所有的表删除掉，然后根据model中配置的结构重新建表，该操作会破坏原有数据。
+  #当mybatis.table.auto=update时，系统会自动判断哪些表是新建的，哪些字段要修改类型等，哪些字段要删除，哪些字段要新增，该操作不会破坏原有数据。
+  #当mybatis.table.auto=none时，系统不做任何处理。
+  #mybatis.model.pack这个配置是用来配置要扫描的用于创建表的对象的包名
+
+timeOut: "3600"
+server:
+  port: 8866
+  servlet:
+    context-path: /demo
+
+
+logging:
+  config: classpath:log4j2-spring.xml
